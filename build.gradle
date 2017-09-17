@@ -1,0 +1,14 @@
+plugins {
+    id "java"
+    id "org.springframework.boot" version "1.5.7.RELEASE"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.joinfaces:jsf-spring-boot-starter:2.4.1"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+}
