@@ -1,14 +1,33 @@
-plugins {
-    id "java"
-    id "org.springframework.boot" version "1.5.7.RELEASE"
+buildscript {
+    ext {
+        springBootVersion = '2.0.0.RC1'
+    }
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'org.joinfaces'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
 repositories {
-    jcenter()
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
 }
 
 dependencies {
-    compile "org.joinfaces:jsf-spring-boot-starter:2.4.1"
+    compile "org.joinfaces:primefaces-spring-boot-starter:3.0.0.RC1"
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
