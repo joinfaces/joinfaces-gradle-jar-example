@@ -1,24 +1,17 @@
 buildscript {
-    ext {
-        springBootVersion = '2.0.0.RELEASE'
-    }
     repositories {
         mavenCentral()
         maven { url "https://repo.spring.io/snapshot" }
         maven { url "https://repo.spring.io/milestone" }
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.0.RELEASE")
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-
-group = 'org.joinfaces'
-version = '1.0.0-SNAPSHOT'
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -27,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    compile "org.joinfaces:primefaces-spring-boot-starter:3.0.1"
+    compile "org.joinfaces:jsf-spring-boot-starter:3.0.2"
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
