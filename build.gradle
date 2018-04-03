@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compile "org.joinfaces:jsf-spring-boot-starter:3.0.2"
+    compile "org.joinfaces:jsf-spring-boot-starter:3.1.0"
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
