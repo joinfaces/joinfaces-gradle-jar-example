@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
     }
 }
 
@@ -15,8 +15,14 @@ repositories {
     mavenCentral()
 }
 
+dependencyManagement {
+    imports {
+        mavenBom "org.joinfaces:joinfaces-dependencies:3.2.1"
+    }
+}
+
 dependencies {
-    compile "org.joinfaces:jsf-spring-boot-starter:3.2.1"
+    compile "org.joinfaces:jsf-spring-boot-starter"
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
