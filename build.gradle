@@ -26,6 +26,3 @@ dependencies {
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
-
-apply plugin: 'jacoco'
-jacocoTestReport.reports.xml.enabled = true
