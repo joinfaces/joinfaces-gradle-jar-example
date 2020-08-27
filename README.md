@@ -1,6 +1,6 @@
 # JoinFaces Gradle Jar Example
 
-[![Build Status](https://travis-ci.org/joinfaces/joinfaces-gradle-jar-example.svg?branch=master)](https://travis-ci.org/joinfaces/joinfaces-gradle-jar-example)
+![Java CI with Gradle](https://github.com/joinfaces/joinfaces-gradle-jar-example/workflows/Java%20CI%20with%20Gradle/badge.svg?branch=master)
 
 Usages:
   - Can be started via its `main`-method using an embedded Tomcat
