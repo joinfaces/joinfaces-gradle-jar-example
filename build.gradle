@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    compile "org.joinfaces:jsf-spring-boot-starter"
+    implementation "org.joinfaces:jsf-spring-boot-starter"
 
-    testCompile "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
