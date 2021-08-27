@@ -1,5 +1,5 @@
 plugins {
-    id "org.joinfaces" version "4.5.3"
+    id "org.joinfaces" version "4.5.4"
 }
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
