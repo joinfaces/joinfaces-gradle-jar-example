@@ -11,6 +11,6 @@ import java.time.LocalDateTime;
 public class DummyBean {
 
     public String getText() {
-        return "Hello from Spring: " + LocalDateTime.now().toString();
+        return "Hello from Spring: " + LocalDateTime.now();
     }
 }
