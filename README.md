@@ -10,3 +10,5 @@ Usages:
   - Can be tested using `@SpringBootTest(webEnvironment = RANDOM_PORT)`
     - Using `./gradlew test`
     - Using your IDE
+
+When using an embedded Tomcat, the application should be available at http://localhost:8080/index.xhtml
