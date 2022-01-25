@@ -1,5 +1,5 @@
 plugins {
-    id "org.joinfaces" version "4.6.3"
+    id "org.joinfaces" version "5.0.0-m1"
 }
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
@@ -7,6 +7,7 @@ apply plugin: 'io.spring.dependency-management'
 
 repositories {
     mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
 }
 
 dependencies {
