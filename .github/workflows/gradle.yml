@@ -23,4 +23,4 @@ jobs:
         distribution: 'temurin'
         java-version: ${{ matrix.java }}
     - name: Build with Gradle
-      run: ./gradlew build --no-daemon
+      run: ./gradlew -V build
