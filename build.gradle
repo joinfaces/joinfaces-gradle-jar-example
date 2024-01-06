@@ -1,9 +1,7 @@
 plugins {
     id "java"
-    id "org.joinfaces" version "5.1.7"
+    id 'org.springframework.boot' version '3.2.1'
 }
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
 
 java {
     toolchain {
@@ -16,7 +14,8 @@ repositories {
 }
 
 dependencies {
-    implementation "org.joinfaces:faces-spring-boot-starter"
+    implementation platform('org.joinfaces:joinfaces-platform:5.2.1')
+    implementation 'org.joinfaces:faces-spring-boot-starter'
 
     testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
