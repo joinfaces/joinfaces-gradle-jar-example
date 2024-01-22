@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation platform('org.joinfaces:joinfaces-platform:5.2.1')
+    implementation platform('org.joinfaces:joinfaces-platform:5.2.2')
     implementation 'org.joinfaces:faces-spring-boot-starter'
 
     testImplementation "org.springframework.boot:spring-boot-starter-test"
