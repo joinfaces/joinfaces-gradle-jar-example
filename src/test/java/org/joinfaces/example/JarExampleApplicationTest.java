@@ -24,6 +24,17 @@ public class JarExampleApplicationTest {
     public void testHelloFromSpring() {
         ResponseEntity<String> entity = restTemplate.getForEntity("/index.xhtml", String.class);
 
+        checkResponse(entity);
+    }
+
+    @Test
+    public void testWelcomePageRedirect() {
+        ResponseEntity<String> entity = restTemplate.getForEntity("/", String.class);
+
+        checkResponse(entity);
+    }
+
+    private static void checkResponse(ResponseEntity<String> entity) {
         assertThat(entity.getStatusCode().is2xxSuccessful()).isTrue();
 
         assertThat(entity.getBody()).contains("Hello from Spring:");
