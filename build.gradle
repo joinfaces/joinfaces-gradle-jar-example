@@ -1,6 +1,6 @@
 plugins {
     id "java"
-    id 'org.springframework.boot' version '3.5.7'
+    id 'org.springframework.boot' version '4.0.0'
 }
 
 java {
@@ -14,10 +14,12 @@ repositories {
 }
 
 dependencies {
-    implementation platform('org.joinfaces:joinfaces-platform:5.5.7')
+    implementation platform('org.joinfaces:joinfaces-platform:6.0.0')
     implementation 'org.joinfaces:faces-spring-boot-starter'
 
     testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "org.springframework.boot:spring-boot-resttestclient"
+    testImplementation "org.springframework.boot:spring-boot-starter-restclient-test"
 }
 
 tasks.named('test') {
